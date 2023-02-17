@@ -1,0 +1,63 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": [
+      "es2020"
+    ],
+    "declaration": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": false,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "baseUrl":"./",
+    "paths":{
+      "/opt/nodejs/productsLayer":[
+        "lambda/products/layers/productsLayer/nodejs/productRepository"
+      ],
+      "/opt/nodejs/productsEventsLayer":[
+        "lambda/products/layers/productsEventsLayer/nodejs/productEvent"
+      ],
+      "/opt/nodejs/ordersLayer":[
+        "lambda/orders/layers/ordersLayer/nodejs/orderRepository"
+      ],
+      "/opt/nodejs/orderApiLayer":[
+        "lambda/orders/layers/ordersApiLayer/nodejs/orderApi"
+      ],
+      "/opt/nodejs/orderEventsLayer":[
+        "lambda/orders/layers/ordersEventsLayer/nodejs/orderEvent"
+      ],
+      "/opt/nodejs/orderEventsRepositoryLayer":[
+        "lambda/orders/layers/ordersEventsRepositoryLayer/nodejs/orderEventRepository"
+      ],
+      "/opt/nodejs/invoiceTransaction":[
+        "lambda/invoices/layers/invoiceTransaction/nodejs/invoiceTransaction"
+      ],
+      "/opt/nodejs/invoiceWSConnection":[
+        "lambda/invoices/layers/invoiceWSConnection/nodejs/invoiceWSConnection"
+      ],
+      "/opt/nodejs/invoiceRepository":[
+        "lambda/invoices/layers/invoiceRepository/nodejs/invoiceRepository"
+      ],
+      "/opt/nodejs/authUserInfo":[
+        "lambda/auth/layers/authUserInfo/nodejs/authUserInfo"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "cdk.out"
+  ]
+}
